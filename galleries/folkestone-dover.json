@@ -1,0 +1,71 @@
+{
+  "name": "Folkestone to Dover",
+  "description": "10-mile coastal hike along white cliffs, clifftop paths, and dramatic skies. A special one for many first-timers.",
+  "date": "December 14, 2024",
+  "location": "Kent Coast, England",
+  "distance": "10 miles",
+  "duration": "5-6 hours",
+  "difficulty": "Moderate",
+  "highlights": [
+    "White Cliffs of Dover",
+    "Clifftop paths",
+    "Coastal views",
+    "Shakespeare Cliff"
+  ],
+  "photos": [
+    {
+      "id": 1,
+      "url": "https://images.unsplash.com/photo-1544966503-7cc5ac882d5e?w=800&h=600&fit=crop",
+      "thumbnail": "https://images.unsplash.com/photo-1544966503-7cc5ac882d5e?w=400&h=300&fit=crop",
+      "title": "Dramatic White Cliffs",
+      "description": "The iconic white cliffs stretching along the Kent coastline",
+      "photographer": "Sarah M.",
+      "time": "Morning"
+    },
+    {
+      "id": 2,
+      "url": "https://images.unsplash.com/photo-1506379429636-c31a01d19b5b?w=800&h=600&fit=crop",
+      "thumbnail": "https://images.unsplash.com/photo-1506379429636-c31a01d19b5b?w=400&h=300&fit=crop",
+      "title": "Clifftop Trail",
+      "description": "Following the coastal path with views across to France",
+      "photographer": "Mike R.",
+      "time": "Mid-morning"
+    },
+    {
+      "id": 3,
+      "url": "https://images.unsplash.com/photo-1464822759844-d150baec93c5?w=800&h=600&fit=crop",
+      "thumbnail": "https://images.unsplash.com/photo-1464822759844-d150baec93c5?w=400&h=300&fit=crop",
+      "title": "Team at Dover",
+      "description": "Celebrating our arrival at Dover after 10 miles of coastal walking",
+      "photographer": "Alex K.",
+      "time": "Afternoon"
+    },
+    {
+      "id": 4,
+      "url": "https://images.unsplash.com/photo-1558442074-6d85ba92010f?w=800&h=600&fit=crop",
+      "thumbnail": "https://images.unsplash.com/photo-1558442074-6d85ba92010f?w=400&h=300&fit=crop",
+      "title": "Coastal Drama",
+      "description": "Dramatic skies and choppy seas along the clifftop path",
+      "photographer": "Jenny L.",
+      "time": "Midday"
+    },
+    {
+      "id": 5,
+      "url": "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800&h=600&fit=crop",
+      "thumbnail": "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=400&h=300&fit=crop",
+      "title": "Dover Harbor",
+      "description": "The busy port of Dover seen from Shakespeare Cliff",
+      "photographer": "David P.",
+      "time": "Late afternoon"
+    },
+    {
+      "id": 6,
+      "url": "https://images.unsplash.com/photo-1586348943529-beaae6c28db9?w=800&h=600&fit=crop",
+      "thumbnail": "https://images.unsplash.com/photo-1586348943529-beaae6c28db9?w=400&h=300&fit=crop",
+      "title": "Cliff Geology",
+      "description": "The fascinating chalk cliff formations up close",
+      "photographer": "Sarah M.",
+      "time": "Early afternoon"
+    }
+  ]
+}
