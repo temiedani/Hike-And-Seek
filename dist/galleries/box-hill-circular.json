@@ -1,0 +1,81 @@
+{
+  "name": "Box Hill Circular",
+  "description": "The very first hike – misty climbs, muddy boots, and classic Surrey views. 7.5 miles in 4.5 hours. Where it all began for Hike and S33k.",
+  "date": "November 16, 2024",
+  "location": "Surrey, England",
+  "distance": "7.5 miles",
+  "duration": "4.5 hours",
+  "difficulty": "Moderate",
+  "highlights": [
+    "Box Hill summit",
+    "Surrey Hills AONB",
+    "North Downs Way",
+    "Stepping stones",
+    "Historic first hike"
+  ],
+  "photos": [
+    {
+      "id": 1,
+      "url": "https://images.unsplash.com/photo-1551632811-561732d1e306?w=800&h=600&fit=crop",
+      "thumbnail": "https://images.unsplash.com/photo-1551632811-561732d1e306?w=400&h=300&fit=crop",
+      "title": "Misty Morning Start",
+      "description": "Our very first group hike - misty morning at Box Hill where it all began",
+      "photographer": "David P.",
+      "time": "Morning"
+    },
+    {
+      "id": 2,
+      "url": "https://images.unsplash.com/photo-1551524164-6cf6ac832fb3?w=800&h=600&fit=crop",
+      "thumbnail": "https://images.unsplash.com/photo-1551524164-6cf6ac832fb3?w=400&h=300&fit=crop",
+      "title": "Surrey Hills Vista",
+      "description": "Classic Surrey countryside views from the Box Hill summit",
+      "photographer": "Jenny L.",
+      "time": "Mid-morning"
+    },
+    {
+      "id": 3,
+      "url": "https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=800&h=600&fit=crop",
+      "thumbnail": "https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=400&h=300&fit=crop",
+      "title": "North Downs Way",
+      "description": "Following the famous North Downs Way along the ridge",
+      "photographer": "Sarah M.",
+      "time": "Late morning"
+    },
+    {
+      "id": 4,
+      "url": "https://images.unsplash.com/photo-1433086966358-54859d0ed716?w=800&h=600&fit=crop",
+      "thumbnail": "https://images.unsplash.com/photo-1433086966358-54859d0ed716?w=400&h=300&fit=crop",
+      "title": "The Stepping Stones",
+      "description": "Crossing the River Mole on the famous Box Hill stepping stones",
+      "photographer": "Mike R.",
+      "time": "Midday"
+    },
+    {
+      "id": 5,
+      "url": "https://images.unsplash.com/photo-1464822759844-d150baec93c5?w=800&h=600&fit=crop",
+      "thumbnail": "https://images.unsplash.com/photo-1464822759844-d150baec93c5?w=400&h=300&fit=crop",
+      "title": "Our First Group Photo",
+      "description": "The original Hike and S33k team on our inaugural adventure",
+      "photographer": "Alex K.",
+      "time": "Lunch time"
+    },
+    {
+      "id": 6,
+      "url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=600&fit=crop",
+      "thumbnail": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop",
+      "title": "Chalk Downs",
+      "description": "Beautiful chalk downland views across the Surrey countryside",
+      "photographer": "David P.",
+      "time": "Afternoon"
+    },
+    {
+      "id": 7,
+      "url": "https://images.unsplash.com/photo-1506260408121-e353d10b87c7?w=800&h=600&fit=crop",
+      "thumbnail": "https://images.unsplash.com/photo-1506260408121-e353d10b87c7?w=400&h=300&fit=crop",
+      "title": "End of Our First Adventure",
+      "description": "Muddy boots and big smiles - the end of our very first hike together",
+      "photographer": "Jenny L.",
+      "time": "Late afternoon"
+    }
+  ]
+}

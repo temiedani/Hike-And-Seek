@@ -1,0 +1,44 @@
+{
+  "collections": [
+    {
+      "id": "ramsgate-to-margate",
+      "name": "Ramsgate to Margate",
+      "description": "Epic 10-mile coastal walk along Kent's Viking Coast Path",
+      "thumbnail": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop",
+      "photoCount": 8,
+      "lastUpdated": "2025-05-31"
+    },
+    {
+      "id": "folkestone-dover",
+      "name": "Folkestone to Dover",
+      "description": "10-mile coastal hike along white cliffs and dramatic coastline",
+      "thumbnail": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop",
+      "photoCount": 6,
+      "lastUpdated": "2024-12-14"
+    },
+    {
+      "id": "balcombe-viaduct",
+      "name": "Balcombe and the Viaduct",
+      "description": "10 miles through Sussex countryside with Victorian railway views",
+      "thumbnail": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop",
+      "photoCount": 6,
+      "lastUpdated": "2024-12-07"
+    },
+    {
+      "id": "amersham-trail",
+      "name": "Amersham Trail",
+      "description": "Winter walking through Chiltern Hills woods and riverside paths",
+      "thumbnail": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400&h=300&fit=crop",
+      "photoCount": 6,
+      "lastUpdated": "2024-11-30"
+    },
+    {
+      "id": "box-hill-circular",
+      "name": "Box Hill Circular",
+      "description": "Our very first hike - misty Surrey Hills adventure where it all began",
+      "thumbnail": "https://images.unsplash.com/photo-1551632811-561732d1e306?w=400&h=300&fit=crop",
+      "photoCount": 7,
+      "lastUpdated": "2024-11-16"
+    }
+  ]
+}
