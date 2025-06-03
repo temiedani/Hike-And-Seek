@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-hiking text-gray-900 dark:text-gray-100 bg-white dark:bg-gray-900 transition-colors duration-200;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold text-gray-900 dark:text-white;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-nature-600 hover:bg-nature-700 dark:bg-nature-500 dark:hover:bg-nature-600 text-white font-medium py-3 px-6 rounded-lg transition-colors duration-200 shadow-lg hover:shadow-xl;
+  }
+  
+  .btn-secondary {
+    @apply bg-trail-500 hover:bg-trail-600 dark:bg-trail-400 dark:hover:bg-trail-500 text-white font-medium py-3 px-6 rounded-lg transition-colors duration-200 shadow-lg hover:shadow-xl;
+  }
+  
+  .card {
+    @apply bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-xl dark:shadow-2xl transition-all duration-300 border dark:border-gray-700;
+  }
+  
+  .hero-gradient {
+    background: linear-gradient(135deg, #2a7f2a 0%, #389e38 50%, #5ab85a 100%);
+  }
+  
+  .dark .hero-gradient {
+    background: linear-gradient(135deg, #1f2937 0%, #374151 50%, #4b5563 100%);
+  }
+  
+  .lightbox-overlay {
+    @apply fixed inset-0 bg-black bg-opacity-90 dark:bg-black dark:bg-opacity-95 z-50 flex items-center justify-center p-4;
+  }
+  
+  .lightbox-content {
+    @apply relative max-w-4xl max-h-full;
+  }
+  
+  .lightbox-image {
+    @apply max-w-full max-h-full object-contain rounded-lg;
+  }
+  
+  .instagram-grid {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6;
+  }
+  
+  /* Dark mode improvements for form elements */
+  .dark input, 
+  .dark textarea, 
+  .dark select {
+    @apply bg-gray-800 border-gray-600 text-white placeholder-gray-400;
+  }
+  
+  .dark input:focus,
+  .dark textarea:focus,
+  .dark select:focus {
+    @apply border-nature-500 ring-nature-500/20;
+  }
+  
+  /* Dark mode improvements for gallery and cards */
+  .dark .card:hover {
+    @apply shadow-nature-500/10;
+  }
+  
+  /* Dark mode text improvements */
+  .dark .text-gray-600 {
+    @apply text-gray-400;
+  }
+  
+  .dark .text-gray-700 {
+    @apply text-gray-300;
+  }
+  
+  .dark .text-gray-800 {
+    @apply text-gray-200;
+  }
+  
+  .dark .text-gray-900 {
+    @apply text-gray-100;
+  }
+} 
