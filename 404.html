@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Hike and S33k - Redirecting...</title>
+    <script>
+      // Store the intended path and redirect to the main app
+      const currentPath = window.location.pathname;
+      const basePath = "/Hike-And-Seek/";
+
+      // If we're already at the base path, just go to home
+      if (currentPath === basePath || currentPath === basePath.slice(0, -1)) {
+        window.location.replace(basePath);
+      } else {
+        // Store the intended path in session storage for the app to pick up
+        const intendedPath = currentPath.replace(basePath, "/");
+        sessionStorage.setItem("intended-path", intendedPath);
+        window.location.replace(basePath);
+      }
+    </script>
+  </head>
+  <body>
+    <div
+      style="
+        font-family:
+          system-ui,
+          -apple-system,
+          sans-serif;
+        text-align: center;
+        padding: 50px;
+      "
+    >
+      <h2>🥾 Getting you back on track...</h2>
+      <p>Redirecting to Hike and S33k</p>
+    </div>
+  </body>
+</html>
