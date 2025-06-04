@@ -39,8 +39,8 @@ function UpcomingHikes({ maxHikes = null }) {
         duration: "4-5 hours",
         difficulty: "Moderate",
         description: "Spectacular clifftop walk along England's highest chalk cliffs with stunning views over the English Channel.",
-        rsvpCount: 12,
-        maxParticipants: 20,
+        attendees: 12,
+        maxAttendees: 20,
         meetingPoint: "Eastbourne Station",
         meetingTime: "09:00",
         transport: "Train from London Victoria (1h 30m)",
@@ -52,7 +52,8 @@ function UpcomingHikes({ maxHikes = null }) {
           "Water (2L minimum)",
           "Camera for stunning views"
         ],
-        isThisWeek: true
+        isThisWeek: true,
+        visible: false
       },
       {
         id: 2,
@@ -63,8 +64,8 @@ function UpcomingHikes({ maxHikes = null }) {
         duration: "3-4 hours",
         difficulty: "Easy",
         description: "Gentle walk through historic parkland with views of Windsor Castle and the Long Walk.",
-        rsvpCount: 8,
-        maxParticipants: 15,
+        attendees: 8,
+        maxAttendees: 15,
         meetingPoint: "Windsor Central Station",
         meetingTime: "10:00",
         transport: "Train from London Paddington (1h)",
@@ -75,7 +76,8 @@ function UpcomingHikes({ maxHikes = null }) {
           "Snacks and water",
           "Camera"
         ],
-        isThisWeek: false
+        isThisWeek: false,
+        visible: false
       },
       {
         id: 3,
@@ -86,8 +88,8 @@ function UpcomingHikes({ maxHikes = null }) {
         duration: "5-6 hours",
         difficulty: "Challenging",
         description: "Challenging hike through beech woods and rolling hills in the Chilterns AONB.",
-        rsvpCount: 6,
-        maxParticipants: 12,
+        attendees: 6,
+        maxAttendees: 12,
         meetingPoint: "Great Missenden Station",
         meetingTime: "08:30",
         transport: "Train from London Marylebone (45m)",
@@ -100,7 +102,8 @@ function UpcomingHikes({ maxHikes = null }) {
           "Energy snacks",
           "First aid basics"
         ],
-        isThisWeek: false
+        isThisWeek: false,
+        visible: false
       },
       {
         id: 4,
@@ -111,8 +114,8 @@ function UpcomingHikes({ maxHikes = null }) {
         duration: "4 hours",
         difficulty: "Easy",
         description: "Riverside walk along the Thames Path with historic palaces and beautiful gardens.",
-        rsvpCount: 15,
-        maxParticipants: 25,
+        attendees: 15,
+        maxAttendees: 25,
         meetingPoint: "Richmond Station",
         meetingTime: "10:30",
         transport: "Tube/Train from central London (30m)",
@@ -123,7 +126,8 @@ function UpcomingHikes({ maxHikes = null }) {
           "Snacks and drinks",
           "Camera for palace views"
         ],
-        isThisWeek: false
+        isThisWeek: false,
+        visible: false
       },
       {
         id: 5,
@@ -134,8 +138,8 @@ function UpcomingHikes({ maxHikes = null }) {
         duration: "5 hours",
         difficulty: "Moderate",
         description: "Classic South Downs walk with panoramic views from Devil's Dyke, one of Sussex's most famous landmarks.",
-        rsvpCount: 10,
-        maxParticipants: 18,
+        attendees: 10,
+        maxAttendees: 18,
         meetingPoint: "Brighton Station",
         meetingTime: "09:15",
         transport: "Train from London Victoria/St Pancras (1h)",
@@ -147,7 +151,8 @@ function UpcomingHikes({ maxHikes = null }) {
           "Water bottle",
           "Camera"
         ],
-        isThisWeek: false
+        isThisWeek: false,
+        visible: false
       }
     ])
   }
@@ -189,7 +194,12 @@ function UpcomingHikes({ maxHikes = null }) {
     )
   }
 
-  const displayHikes = maxHikes ? hikes.slice(0, maxHikes) : hikes
+  const displayHikes = (() => {
+    // Filter hikes by visibility (show if visible is true or undefined for backwards compatibility)
+    const visibleHikes = hikes.filter(hike => hike.visible !== false)
+    // Then apply maxHikes limit if specified
+    return maxHikes ? visibleHikes.slice(0, maxHikes) : visibleHikes
+  })()
 
   if (displayHikes.length === 0) {
     return (
@@ -240,7 +250,7 @@ function UpcomingHikes({ maxHikes = null }) {
                   </span>
                   <div className="flex items-center text-sm text-gray-600 dark:text-gray-400">
                     <Users className="h-4 w-4 mr-1" />
-                    {hike.rsvpCount}/{hike.maxParticipants} signed up
+                    {hike.attendees || 0}/{hike.maxAttendees || 0} signed up
                   </div>
                 </div>
 
@@ -248,12 +258,12 @@ function UpcomingHikes({ maxHikes = null }) {
                 <div className="mb-4">
                   <div className="flex justify-between text-xs text-gray-500 dark:text-gray-500 mb-1">
                     <span>RSVP Progress</span>
-                    <span>{Math.round(getProgressPercentage(hike.rsvpCount, hike.maxParticipants))}%</span>
+                    <span>{Math.round(getProgressPercentage(hike.attendees || 0, hike.maxAttendees || 1))}%</span>
                   </div>
                   <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
                     <div 
-                      className={`h-2 rounded-full transition-all duration-300 ${getProgressColor(getProgressPercentage(hike.rsvpCount, hike.maxParticipants))}`}
-                      style={{ width: `${getProgressPercentage(hike.rsvpCount, hike.maxParticipants)}%` }}
+                      className={`h-2 rounded-full transition-all duration-300 ${getProgressColor(getProgressPercentage(hike.attendees || 0, hike.maxAttendees || 1))}`}
+                      style={{ width: `${getProgressPercentage(hike.attendees || 0, hike.maxAttendees || 1)}%` }}
                     ></div>
                   </div>
                 </div>
