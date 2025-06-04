@@ -13,7 +13,7 @@ function Footer() {
             <div className="flex items-center space-x-3">
               <div className="bg-gradient-to-br from-emerald-500 to-teal-600 p-2 rounded-lg shadow-lg">
                 <img 
-                  src="/logo.png" 
+                  src="./logo.png" 
                   alt="Hike and S33k" 
                   className="h-8 w-8 object-contain"
                 />

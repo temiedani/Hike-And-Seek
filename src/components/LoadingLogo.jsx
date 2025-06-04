@@ -4,7 +4,7 @@ function LoadingLogo() {
       <div className="text-center">
         <div className="relative">
           <img 
-            src="/logo.png" 
+            src="./logo.png" 
             alt="Hike and S33k" 
             className="h-16 w-16 mx-auto animate-pulse"
           />
