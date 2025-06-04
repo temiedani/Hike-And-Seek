@@ -42,7 +42,7 @@ function GalleryPage() {
   // Load gallery details from JSON file
   const loadGalleryDetails = async (galleryId) => {
     try {
-      const response = await fetch(`/galleries/${galleryId}.json`)
+      const response = await fetch(`./galleries/${galleryId}.json`)
       if (response.ok) {
         const data = await response.json()
         setGalleryDetails(data)
@@ -77,7 +77,7 @@ function GalleryPage() {
   useEffect(() => {
     const loadGalleries = async () => {
       try {
-        const response = await fetch('/galleries/index.json')
+        const response = await fetch('./galleries/index.json')
         if (response.ok) {
           const data = await response.json()
           setGalleries(data.collections || [])

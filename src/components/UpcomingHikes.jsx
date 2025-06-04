@@ -9,7 +9,7 @@ function UpcomingHikes({ maxHikes = null }) {
   useEffect(() => {
     const loadHikes = async () => {
       try {
-        const response = await fetch('/hikes/upcoming.json')
+        const response = await fetch('./hikes/upcoming.json')
         if (response.ok) {
           const data = await response.json()
           setHikes(data.hikes || [])

@@ -27,7 +27,7 @@ function InstagramEmbed({ useJsonFeed = false, maxPosts = 6 }) {
   useEffect(() => {
     const loadInstagramPosts = async () => {
       try {
-        const response = await fetch('/instagram/embeds.json')
+        const response = await fetch('./instagram/embeds.json')
         if (response.ok) {
           const data = await response.json()
           setPosts(data.posts || [])

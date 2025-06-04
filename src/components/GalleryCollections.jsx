@@ -9,7 +9,7 @@ function GalleryCollections({ maxCollections = 3 }) {
   useEffect(() => {
     const loadCollections = async () => {
       try {
-        const response = await fetch('/galleries/index.json')
+        const response = await fetch('./galleries/index.json')
         if (response.ok) {
           const data = await response.json()
           setCollections(data.collections || [])

@@ -11,7 +11,7 @@ function Gallery({ galleryName = 'recent' }) {
   useEffect(() => {
     const loadGallery = async () => {
       try {
-        const response = await fetch(`/galleries/${galleryName}.json`)
+        const response = await fetch(`./galleries/${galleryName}.json`)
         if (response.ok) {
           const galleryData = await response.json()
           // Handle both old 'images' and new 'photos' structure
