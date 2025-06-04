@@ -4,7 +4,7 @@
     {
       "id": 1,
       "title": "Seven Sisters Coastal Walk",
-      "date": "TBA",
+      "date": "2024-04-20",
       "time": "09:00 AM",
       "location": "Seven Sisters Cliffs, East Sussex",
       "meetingPoint": "Seaford Railway Station",
@@ -15,10 +15,11 @@
       "duration": "4-5 hours",
       "elevation": "500 ft gain",
       "description": "Experience one of England's most iconic coastal walks! Dramatic chalk cliffs, stunning sea views, and the famous Seven Sisters. A perfect introduction to coastal hiking with breathtaking photo opportunities.",
-      "attendees": 6,
-      "maxAttendees": 12,
+      "attendees": 30,
+      "maxAttendees": 50,
       "organizer": "Sarah M.",
       "weatherAlert": false,
+      "visible": true,
       "whatToBring": [
         "Sturdy walking boots",
         "Waterproof jacket",
@@ -37,83 +38,11 @@
       "parkingInfo": "Meet at Seaford station - train from London Victoria",
       "emergencyContact": "+44 7XXX XXX XXX"
     },
-    // {
-    //   "id": 2,
-    //   "title": "Hampstead Heath to Highgate",
-    //   "date": "2024-04-20",
-    //   "time": "10:00 AM",
-    //   "location": "Hampstead Heath, North London",
-    //   "meetingPoint": "Hampstead Heath Station",
-    //   "address": "South End Rd, London NW3 2QB",
-    //   "distance": "5 miles",
-    //   "difficulty": "Easy",
-    //   "difficultyLevel": 1,
-    //   "duration": "2-3 hours",
-    //   "elevation": "200 ft gain",
-    //   "description": "Explore London's wild side! A gentle ramble across Hampstead Heath with London skyline views, ancient ponds, and finishing in historic Highgate village. Perfect for beginners and a lovely Sunday morning adventure.",
-    //   "attendees": 3,
-    //   "maxAttendees": 15,
-    //   "organizer": "Mike R.",
-    //   "weatherAlert": false,
-    //   "whatToBring": [
-    //     "Comfortable walking shoes",
-    //     "Light jacket",
-    //     "Water bottle",
-    //     "Snacks",
-    //     "Camera for city views",
-    //     "Oyster card for return journey"
-    //   ],
-    //   "highlights": [
-    //     "London skyline views",
-    //     "Ancient heathland",
-    //     "Kenwood House",
-    //     "Highgate village"
-    //   ],
-    //   "trailConditions": "Excellent - well-maintained paths",
-    //   "parkingInfo": "Public transport recommended - Overground to Hampstead Heath",
-    //   "emergencyContact": "+44 7XXX XXX XXX"
-    // },
-    // {
-    //   "id": 3,
-    //   "title": "Box Hill Countryside Ramble",
-    //   "date": "2024-05-18",
-    //   "time": "09:30 AM",
-    //   "location": "Box Hill, Surrey",
-    //   "meetingPoint": "Box Hill & Westhumble Station",
-    //   "address": "Box Hill Rd, Mickleham, Dorking RH5 6BY",
-    //   "distance": "6 miles",
-    //   "difficulty": "Moderate",
-    //   "difficultyLevel": 2,
-    //   "duration": "3-4 hours",
-    //   "elevation": "800 ft gain",
-    //   "description": "Classic Surrey countryside! Rolling downs, ancient woodlands, and panoramic views across the Surrey Hills. This National Trust area offers stunning vistas and peaceful walking through quintessential English landscape.",
-    //   "attendees": 2,
-    //   "maxAttendees": 10,
-    //   "organizer": "Jenny L.",
-    //   "weatherAlert": false,
-    //   "whatToBring": [
-    //     "Hiking boots",
-    //     "Waterproof layer",
-    //     "Water (2L)",
-    //     "Packed lunch",
-    //     "Walking poles (optional)",
-    //     "National Trust card (for café discount!)"
-    //   ],
-    //   "highlights": [
-    //     "Surrey Hills panorama",
-    //     "Ancient beech woods",
-    //     "Stepping stones",
-    //     "National Trust café"
-    //   ],
-    //   "trailConditions": "Good - some steep sections on chalky paths",
-    //   "parkingInfo": "Train from London Victoria/Waterloo to Box Hill station",
-    //   "emergencyContact": "+44 7XXX XXX XXX"
-    // },
     {
       "id": 2,
       "title": "Epping Forest Explorer",
-      "date": "TBA",
-      "time": "TBA",
+      "date": "2024-04-20",
+      "time": "10:00 AM",
       "location": "Epping Forest, Essex",
       "meetingPoint": "Epping Underground Station",
       "address": "Station Rd, Epping CM16 4HW",
@@ -127,6 +56,7 @@
       "maxAttendees": 12,
       "organizer": "David P.",
       "weatherAlert": false,
+      "visible": false,
       "whatToBring": [
         "Comfortable walking shoes",
         "Light waterproof",
@@ -144,43 +74,43 @@
       "trailConditions": "Excellent - well-marked forest paths",
       "parkingInfo": "Central Line to Epping - perfect for car-free adventure",
       "emergencyContact": "+44 7XXX XXX XXX"
+    },
+    {
+      "id": 3,
+      "title": "Hampstead Heath to Highgate",
+      "date": "2024-04-20",
+      "time": "10:00 AM",
+      "location": "Hampstead Heath, North London",
+      "meetingPoint": "Hampstead Heath Station",
+      "address": "South End Rd, London NW3 2QB",
+      "distance": "5 miles",
+      "difficulty": "Easy",
+      "difficultyLevel": 1,
+      "duration": "2-3 hours",
+      "elevation": "200 ft gain",
+      "description": "Explore London's wild side! A gentle ramble across Hampstead Heath with London skyline views, ancient ponds, and finishing in historic Highgate village. Perfect for beginners and a lovely Sunday morning adventure.",
+      "attendees": 3,
+      "maxAttendees": 15,
+      "organizer": "Mike R.",
+      "weatherAlert": false,
+      "visible": false,
+      "whatToBring": [
+        "Comfortable walking shoes",
+        "Light jacket",
+        "Water bottle",
+        "Snacks",
+        "Camera for city views",
+        "Oyster card for return journey"
+      ],
+      "highlights": [
+        "London skyline views",
+        "Ancient heathland",
+        "Kenwood House",
+        "Highgate village"
+      ],
+      "trailConditions": "Excellent - well-maintained paths",
+      "parkingInfo": "Public transport recommended - Overground to Hampstead Heath",
+      "emergencyContact": "+44 7XXX XXX XXX"
     }
-    // {
-    //   "id": 5,
-    //   "title": "Thames Path: Richmond to Kew",
-    //   "date": "2024-07-13",
-    //   "time": "11:00 AM",
-    //   "location": "Thames Path, West London",
-    //   "meetingPoint": "Richmond Railway Station",
-    //   "address": "The Quadrant, Richmond TW9 1DN",
-    //   "distance": "4 miles",
-    //   "difficulty": "Easy",
-    //   "difficultyLevel": 1,
-    //   "duration": "2-3 hours",
-    //   "elevation": "Flat",
-    //   "description": "Gentle riverside ramble along the Thames! Historic Richmond, beautiful river views, and ending at world-famous Kew Gardens. Perfect for a relaxed weekend walk with optional garden visit afterwards.",
-    //   "attendees": 0,
-    //   "maxAttendees": 15,
-    //   "organizer": "Sarah M.",
-    //   "weatherAlert": false,
-    //   "whatToBring": [
-    //     "Comfortable shoes",
-    //     "Light jacket",
-    //     "Water bottle",
-    //     "Camera for river views",
-    //     "Money for Kew Gardens (optional)",
-    //     "Picnic for riverside lunch"
-    //   ],
-    //   "highlights": [
-    //     "Thames riverside path",
-    //     "Richmond Park deer",
-    //     "Kew Gardens finish",
-    //     "Historic pubs en route"
-    //   ],
-    //   "trailConditions": "Excellent - flat riverside path",
-    //   "parkingInfo": "Train/tube to Richmond - District Line or Overground",
-    //   "emergencyContact": "+44 7XXX XXX XXX",
-    //   "specialNotes": "Optional Kew Gardens visit - bring entry fee or membership"
-    // }
   ]
 }
