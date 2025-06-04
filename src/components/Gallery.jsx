@@ -64,6 +64,76 @@ function Gallery({ galleryName = 'recent' }) {
         date: '2024-03-05',
         location: 'Sample Valley',
         photographer: 'Sample Photographer'
+      },
+      {
+        id: 4,
+        url: 'https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800',
+        thumbnail: 'https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=400&h=300&fit=crop',
+        title: 'Coastal Cliff Walk',
+        description: 'Dramatic coastal cliffs with ocean views',
+        date: '2024-03-20',
+        location: 'Sample Coast',
+        photographer: 'Sample Photographer'
+      },
+      {
+        id: 5,
+        url: 'https://images.unsplash.com/photo-1433086966358-54859d0ed716?w=800',
+        thumbnail: 'https://images.unsplash.com/photo-1433086966358-54859d0ed716?w=400&h=300&fit=crop',
+        title: 'Mountain Lake Reflection',
+        description: 'Pristine mountain lake with perfect reflections',
+        date: '2024-03-18',
+        location: 'Sample Lake',
+        photographer: 'Sample Photographer'
+      },
+      {
+        id: 6,
+        url: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800',
+        thumbnail: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400&h=300&fit=crop',
+        title: 'Dense Forest Path',
+        description: 'Winding path through ancient woodland',
+        date: '2024-03-12',
+        location: 'Sample Woods',
+        photographer: 'Sample Photographer'
+      },
+      {
+        id: 7,
+        url: 'https://images.unsplash.com/photo-1506379429636-c31a01d19b5b?w=800',
+        thumbnail: 'https://images.unsplash.com/photo-1506379429636-c31a01d19b5b?w=400&h=300&fit=crop',
+        title: 'Rocky Summit',
+        description: 'Reaching the rocky summit after challenging climb',
+        date: '2024-03-08',
+        location: 'Sample Peak',
+        photographer: 'Sample Photographer'
+      },
+      {
+        id: 8,
+        url: 'https://images.unsplash.com/photo-1520637736862-4d197d17c936?w=800',
+        thumbnail: 'https://images.unsplash.com/photo-1520637736862-4d197d17c936?w=400&h=300&fit=crop',
+        title: 'Riverside Trail',
+        description: 'Peaceful riverside walk with flowing water',
+        date: '2024-03-25',
+        location: 'Sample River',
+        photographer: 'Sample Photographer'
+      },
+      {
+        id: 9,
+        url: 'https://images.unsplash.com/photo-1544966503-7cc5ac882d5e?w=800',
+        thumbnail: 'https://images.unsplash.com/photo-1544966503-7cc5ac882d5e?w=400&h=300&fit=crop',
+        title: 'Wildflower Meadow',
+        description: 'Colorful wildflower meadow in full bloom',
+        date: '2024-03-22',
+        location: 'Sample Meadow',
+        photographer: 'Sample Photographer'
+      },
+      {
+        id: 10,
+        url: 'https://images.unsplash.com/photo-1558442074-6d85ba92010f?w=800',
+        thumbnail: 'https://images.unsplash.com/photo-1558442074-6d85ba92010f?w=400&h=300&fit=crop',
+        title: 'Sunset Ridge',
+        description: 'Golden hour views from the mountain ridge',
+        date: '2024-03-28',
+        location: 'Sample Ridge',
+        photographer: 'Sample Photographer'
       }
     ])
   }
@@ -116,45 +186,6 @@ function Gallery({ galleryName = 'recent' }) {
 
   return (
     <div className="space-y-6">
-      {/* Gallery Info */}
-      {galleryInfo && (galleryInfo.distance || galleryInfo.duration || galleryInfo.difficulty) && (
-        <div className="bg-gradient-to-r from-nature-50 to-nature-100 dark:from-gray-800 dark:to-gray-700 rounded-xl p-6 mb-8 transition-colors duration-200">
-          <div className="flex flex-wrap items-center gap-4 text-sm">
-            {galleryInfo.distance && (
-              <div className="flex items-center space-x-1">
-                <MapPin className="h-4 w-4 text-nature-600 dark:text-nature-400" />
-                <span className="font-medium text-gray-700 dark:text-gray-300">{galleryInfo.distance}</span>
-              </div>
-            )}
-            {galleryInfo.duration && (
-              <div className="flex items-center space-x-1">
-                <span className="font-medium text-gray-700 dark:text-gray-300">Duration: {galleryInfo.duration}</span>
-              </div>
-            )}
-            {galleryInfo.difficulty && (
-              <div className={`px-3 py-1 rounded-full text-xs font-medium ${
-                galleryInfo.difficulty === 'Easy' ? 'bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-400' :
-                galleryInfo.difficulty === 'Moderate' ? 'bg-yellow-100 text-yellow-800 dark:bg-yellow-900/30 dark:text-yellow-400' :
-                'bg-red-100 text-red-800 dark:bg-red-900/30 dark:text-red-400'
-              }`}>
-                {galleryInfo.difficulty}
-              </div>
-            )}
-          </div>
-          {galleryInfo.highlights && (
-            <div className="mt-4">
-              <div className="flex flex-wrap gap-2">
-                {galleryInfo.highlights.map((highlight, index) => (
-                  <span key={index} className="bg-white dark:bg-gray-600 px-3 py-1 rounded-full text-sm text-gray-700 dark:text-gray-300">
-                    {highlight}
-                  </span>
-                ))}
-              </div>
-            </div>
-          )}
-        </div>
-      )}
-
       {/* Gallery Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {images.map((image, index) => (
@@ -183,7 +214,6 @@ function Gallery({ galleryName = 'recent' }) {
               <div className="flex items-center justify-between text-xs text-gray-500 dark:text-gray-500">
                 <span>{new Date(image.date).toLocaleDateString('en-GB')}</span>
                 {image.location && <span>{image.location}</span>}
-                {image.hike && <span className="bg-nature-100 text-nature-800 dark:bg-nature-900/30 dark:text-nature-400 px-2 py-1 rounded">{image.hike}</span>}
               </div>
             </div>
           </div>

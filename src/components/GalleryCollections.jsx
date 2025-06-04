@@ -89,7 +89,7 @@ function GalleryCollections({ maxCollections = 3 }) {
         <Link
           key={collection.id}
           to={`/gallery?collection=${collection.id}`}
-          className="group card overflow-hidden hover:shadow-lg dark:hover:shadow-dark-xl transition-all duration-300"
+          className="group card overflow-hidden hover:shadow-lg dark:hover:shadow-dark-xl transition-all duration-300 hover:-translate-y-1"
         >
           <div className="relative overflow-hidden">
             <img
@@ -101,6 +101,11 @@ function GalleryCollections({ maxCollections = 3 }) {
             <div className="absolute top-3 right-3 bg-black bg-opacity-50 dark:bg-gray-900 dark:bg-opacity-70 text-white px-2 py-1 rounded text-sm flex items-center">
               <Camera className="h-3 w-3 mr-1" />
               {collection.photoCount}
+            </div>
+            <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <div className="bg-emerald-600 text-white px-4 py-2 rounded-lg font-medium shadow-lg transform scale-90 group-hover:scale-100 transition-transform duration-200">
+                View Gallery
+              </div>
             </div>
           </div>
           <div className="p-5">
