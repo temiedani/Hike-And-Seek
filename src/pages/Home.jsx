@@ -38,7 +38,7 @@ function Home() {
             {/* Main Heading */}
             <div className="space-y-3">
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white drop-shadow-lg">
-                Hike & <span className="text-emerald-400 dark:text-emerald-300">S33k</span> 🥾
+                Hike & <span className="text-emerald-400 dark:text-emerald-300">S33k</span> 🥾 ✨
               </h1>
               <p className="text-lg md:text-xl lg:text-2xl font-light max-w-3xl mx-auto leading-relaxed text-white drop-shadow-md">
                 London-based hiking community.<br />
