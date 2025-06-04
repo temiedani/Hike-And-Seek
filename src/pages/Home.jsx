@@ -6,6 +6,14 @@ import UpcomingHikes from '../components/UpcomingHikes'
 import { openWhatsAppCommunity } from '../constants/links'
 
 function Home() {
+  // Function to scroll to top when navigating
+  const handleNavigateToTop = () => {
+    // Small delay to ensure navigation happens first
+    setTimeout(() => {
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+    }, 100)
+  }
+
   return (
     <div className="space-y-0">
       {/* Hero Section with Full-Width Background */}
@@ -57,7 +65,7 @@ function Home() {
               </button>
               <Link 
                 to="/gallery" 
-                className="group inline-flex items-center space-x-3 border-2 border-white/80 dark:border-white/70 text-white hover:bg-white hover:text-gray-900 dark:hover:bg-gray-100 dark:hover:text-gray-900 font-semibold py-4 px-8 rounded-full transition-all duration-300 backdrop-blur-sm bg-white/10 dark:bg-white/5 hover:scale-105 text-base"
+                className="group inline-flex items-center space-x-3 border-2 border-white/80 dark:border-white/70 text-white hover:bg-white/95 hover:text-black dark:hover:bg-white/90 dark:hover:text-black font-semibold py-4 px-8 rounded-full transition-all duration-300 backdrop-blur-sm bg-white/10 dark:bg-white/5 hover:scale-105 text-base shadow-lg hover:shadow-xl"
               >
                 <Camera className="h-5 w-5" />
                 <span>View Adventures</span>
@@ -135,6 +143,7 @@ function Home() {
             <Link 
               to="/hikes"
               className="group inline-flex items-center space-x-3 bg-emerald-600 hover:bg-emerald-500 dark:bg-emerald-700 dark:hover:bg-emerald-600 text-white font-semibold py-4 px-8 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl dark:shadow-emerald-900/30 dark:hover:shadow-emerald-900/50 hover:scale-105"
+              onClick={handleNavigateToTop}
             >
               <span>View All Upcoming Hikes 🥾</span>
               <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
@@ -162,7 +171,8 @@ function Home() {
           <div className="text-center">
             <Link 
               to="/instagram"
-              className="group inline-flex items-center space-x-3 text-emerald-600 dark:text-emerald-400 hover:text-emerald-700 dark:hover:text-emerald-300 font-semibold text-lg transition-colors duration-200"
+              className="group inline-flex items-center space-x-3 bg-emerald-600 hover:bg-emerald-500 dark:bg-emerald-700 dark:hover:bg-emerald-600 text-white font-semibold py-4 px-8 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl dark:shadow-emerald-900/30 dark:hover:shadow-emerald-900/50 hover:scale-105"
+              onClick={handleNavigateToTop}
             >
               <span>View all Instagram posts</span>
               <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
